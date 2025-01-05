@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Terrenos - Tu Tierra Ideal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #004d40, #00796b, #00bfa5);
+            color: #fff;
+        }
+
+        header {
+            background: rgba(0, 77, 64, 0.9);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00e676;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .cta {
+            background: #00e676;
+            color: #004d40;
+            padding: 15px 30px;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .cta:hover {
+            background: #69f0ae;
+            transform: scale(1.1);
+        }
+
+        .section {
+            padding: 60px;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            color: #004d40;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            background: #004d40;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Tu Tierra Ideal</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#terrenos">Terrenos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <h1>Encuentra tu terreno soñado</h1>
+        <p>La oportunidad de tu vida te espera. Tenemos los mejores terrenos para ti.</p>
+        <button class="cta">Explorar ahora</button>
+    </section>
+
+    <section class="section" id="terrenos">
+        <h2>Terrenos destacados</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Terreno 1">
+                <div class="card-content">
+                    <h3>Terreno en la montaña</h3>
+                    <p>Vista espectacular y ambiente tranquilo. Perfecto para tu casa de descanso.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Terreno 2">
+                <div class="card-content">
+                    <h3>Terreno urbano</h3>
+                    <p>Ubicación céntrica, ideal para proyectos residenciales o comerciales.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Terreno 3">
+                <div class="card-content">
+                    <h3>Terreno campestre</h3>
+                    <p>Espacio amplio y natural para disfrutar de la vida al aire libre.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <p>© 2025 Tu Tierra Ideal. Todos los derechos reservados. Contáctanos al +51 987 654 321</p>
+    </footer>
+</body>
+</html>
